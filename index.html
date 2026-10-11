@@ -1,36 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pricing Model Worksheet — FoundersPath</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<title>Pricing Model Worksheet — Two Weeks Out</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Inter:ital,wght@0,400..700;1,400..700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
-  :root {
-    --navy:     #1E2A3A;
-    --navy-2:   #2D4059;
-    --navy-dk:  #0F1923;
-    --gold:     #C8972A;
-    --gold-dk:  #B07D1E;
-    --gold-lt:  #FFF8E8;
-    --red:      #C0392B;
-    --teal:     #0D6E8A;
-    --cream:    #F2EDE6;
-    --cream-dk: #E8DFD3;
-    --slate:    #94A3B8;
-    --paper:    #FAF7F0;
-    --ink:      #1E2A3A;
-    --ink-soft: #2D4059;
-    --rule:     #DDD3C0;
-    --font-display: 'Source Serif 4', Georgia, serif;
-    --font-body: 'Inter', system-ui, sans-serif;
+  :root{
+    --navy:#10131a;
+    --navy-2:#2c313c;
+    --navy-dk:#10131a;
+    --gold:#2747f5;
+    --gold-dk:#2747f5;
+    --gold-lt:#e9ecf5;
+    --red:#b3261e;
+    --teal:#2747f5;
+    --cream:#e9ecf5;
+    --cream-dk:#d5d9e4;
+    --slate:#9ba3af;
+    --paper:#fbfaf6;
+    --ink:#10131a;
+    --ink-soft:#10131a;
+    --rule:#d5d9e4;
+    --font-display:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;
+    --font-body:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   html, body {
     background: var(--paper); color: var(--ink);
-    font-family: var(--font-body); font-size: 17px; line-height: 1.6;
+    font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif; font-size: 17px; line-height: 1.6;
     min-height: 100vh; -webkit-font-smoothing: antialiased;
   }
   .frame { max-width: 920px; margin: 0 auto; padding: 56px 40px 120px; }
@@ -38,18 +35,17 @@
   .masthead { border-bottom: 1px solid var(--rule); padding-bottom: 36px; margin-bottom: 48px; }
   .brand-stripe {
     display: flex; align-items: center; gap: 14px;
-    font-family: var(--font-body); font-size: 11px;
+    font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif; font-size: 11px;
     font-weight: 700; letter-spacing: 0.22em;
     color: var(--gold); margin-bottom: 28px;
   }
   .brand-stripe::after { content: ''; flex: 1; height: 1px; background: var(--cream-dk); }
   h1.title {
-    font-family: var(--font-display); font-weight: 600;
-    font-size: 56px; line-height: 1.05; letter-spacing: -0.01em;
-    color: var(--navy); margin-bottom: 18px;
-  }
+    font-family: 'Bricolage Grotesque','Arial Narrow',system-ui,sans-serif;font-weight:800;
+    font-size: 56px; line-height: 1.05;letter-spacing:-.03em;
+    color: var(--navy); margin-bottom: 18px;font-style:normal;}
   h1.title em { font-style: italic; color: var(--gold); font-weight: 500; }
-  .deck { font-family: var(--font-display); font-style: italic; font-size: 19px; color: var(--ink-soft); max-width: 660px; }
+  .deck { font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;font-style:normal; font-size: 19px; color: var(--ink-soft); max-width: 660px; }
 
   .progress { display: flex; gap: 4px; margin: 40px 0 20px; }
   .progress-step { flex: 1; height: 3px; background: var(--cream-dk); transition: background 0.4s; }
@@ -57,8 +53,7 @@
   .progress-step.done { background: var(--navy); }
   .progress-label {
     display: flex; justify-content: space-between;
-    font-size: 11px; font-weight: 600; letter-spacing: 0.12em;
-    color: var(--slate); text-transform: uppercase;
+    font-size: 11px; font-weight: 600; letter-spacing: 0.12em;color:#59616e; text-transform: uppercase;
     margin-bottom: 48px; gap: 12px;
   }
   .progress-label span.current { color: var(--navy); }
@@ -71,15 +66,14 @@
   }
   .panel-header { margin-bottom: 36px; }
   .panel-eyebrow {
-    font-family: var(--font-body); font-size: 11px; font-weight: 700;
+    font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif; font-size: 11px; font-weight: 700;
     letter-spacing: 0.22em; color: var(--red); margin-bottom: 14px;
   }
   .panel-title {
-    font-family: var(--font-display); font-weight: 600;
-    font-size: 36px; line-height: 1.1; color: var(--navy); margin-bottom: 12px;
-  }
+    font-family: 'Bricolage Grotesque','Arial Narrow',system-ui,sans-serif;font-weight:800;
+    font-size: 36px; line-height: 1.1; color: var(--navy); margin-bottom: 12px;letter-spacing:-.03em;font-style:normal;}
   .panel-intro {
-    font-family: var(--font-display); font-style: italic;
+    font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;font-style:normal;
     font-size: 18px; color: var(--ink-soft); max-width: 660px;
   }
 
@@ -89,15 +83,15 @@
     border-left: 6px solid var(--red);
   }
   .warning-label {
-    font-family: var(--font-body); font-weight: 700; font-size: 11px;
+    font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif; font-weight: 700; font-size: 11px;
     letter-spacing: 0.22em; color: var(--gold); margin-bottom: 10px;
   }
   .warning-headline {
-    font-family: var(--font-display); font-weight: 600; font-style: italic;
+    font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif; font-weight: 600;font-style:normal;
     font-size: 20px; color: white; line-height: 1.35;
   }
   .warning-body {
-    font-family: var(--font-body); font-size: 14px;
+    font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif; font-size: 14px;
     color: var(--cream-dk); line-height: 1.55; margin-top: 10px;
   }
 
@@ -105,17 +99,16 @@
   .field { margin-bottom: 28px; }
   .field-label {
     display: block;
-    font-family: var(--font-body); font-weight: 600; font-size: 13px;
+    font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif; font-weight: 600; font-size: 13px;
     letter-spacing: 0.04em; color: var(--navy); margin-bottom: 6px;
   }
   .field-help {
-    font-family: var(--font-display); font-style: italic;
+    font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;font-style:normal;
     font-size: 15px; color: var(--ink-soft); margin-bottom: 8px;
     line-height: 1.55;
   }
   .field-example {
-    font-family: var(--font-body); font-size: 13px;
-    color: var(--slate); margin-bottom: 12px;
+    font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif; font-size: 13px;color:#59616e; margin-bottom: 12px;
     padding-left: 10px; border-left: 2px solid var(--cream-dk);
     line-height: 1.55;
   }
@@ -125,8 +118,8 @@
     border: 1px solid var(--cream-dk);
     border-bottom: 2px solid var(--navy);
     padding: 13px 16px;
-    font-family: var(--font-body); font-size: 15px;
-    color: var(--navy); border-radius: 0;
+    font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif; font-size: 15px;
+    color: var(--navy); border-radius:0;
     transition: border-color 0.2s, background 0.2s;
   }
   input:focus, textarea:focus, select:focus {
@@ -150,11 +143,11 @@
     border-color: var(--navy); background: var(--gold-lt);
   }
   .radio-card-label {
-    font-family: var(--font-display); font-weight: 600;
+    font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif; font-weight: 600;
     font-size: 18px; color: var(--navy); margin-bottom: 4px;
   }
   .radio-card-help {
-    font-family: var(--font-body); font-size: 13px;
+    font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif; font-size: 13px;
     color: var(--ink-soft); line-height: 1.5;
   }
 
@@ -166,7 +159,7 @@
     padding: 13px 16px;
     cursor: pointer;
     transition: all 0.15s;
-    font-family: var(--font-body); font-size: 13.5px;
+    font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif; font-size: 13.5px;
     color: var(--ink-soft); line-height: 1.5;
     display: flex; align-items: flex-start; gap: 10px;
   }
@@ -180,7 +173,7 @@
   /* nav */
   .nav { display: flex; justify-content: space-between; gap: 16px; margin-top: 48px; padding-top: 32px; border-top: 1px solid var(--rule); }
   .btn {
-    font-family: var(--font-body); font-weight: 600; font-size: 13px;
+    font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif; font-weight: 600; font-size: 13px;
     letter-spacing: 0.12em; text-transform: uppercase;
     padding: 14px 28px; cursor: pointer; border: none;
     transition: background 0.15s, color 0.15s, transform 0.1s;
@@ -205,36 +198,33 @@
     margin-bottom: 40px;
   }
   .output-title {
-    font-family: var(--font-display); font-weight: 600;
+    font-family: 'Bricolage Grotesque','Arial Narrow',system-ui,sans-serif;font-weight:800;
     font-size: 44px; line-height: 1.05;
-    color: var(--navy); margin-bottom: 12px;
-  }
+    color: var(--navy); margin-bottom: 12px;letter-spacing:-.03em;font-style:normal;}
   .output-title em { color: var(--gold); font-style: italic; font-weight: 500; }
   .output-sub {
-    font-family: var(--font-display); font-style: italic;
+    font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;font-style:normal;
     font-size: 18px; color: var(--ink-soft);
   }
   .output-meta {
     display: flex; gap: 32px; margin-top: 20px;
-    font-family: var(--font-body); font-size: 12px;
-    color: var(--slate); letter-spacing: 0.08em; text-transform: uppercase;
+    font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif; font-size: 12px;color:#59616e; letter-spacing: 0.08em; text-transform: uppercase;
     flex-wrap: wrap;
   }
   .output-meta span strong {
     color: var(--navy); display: block; font-size: 16px;
     letter-spacing: 0; text-transform: none; margin-top: 2px;
-    font-family: var(--font-display); font-weight: 600;
+    font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif; font-weight: 600;
   }
 
   .section { margin-bottom: 48px; }
   .section-eyebrow {
-    font-family: var(--font-body); font-weight: 700; font-size: 11px;
+    font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif; font-weight: 700; font-size: 11px;
     letter-spacing: 0.22em; color: var(--red); margin-bottom: 10px;
   }
   .section-title {
-    font-family: var(--font-display); font-weight: 600;
-    font-size: 28px; line-height: 1.15; color: var(--navy); margin-bottom: 16px;
-  }
+    font-family: 'Bricolage Grotesque','Arial Narrow',system-ui,sans-serif;font-weight:800;
+    font-size: 28px; line-height: 1.15; color: var(--navy); margin-bottom: 16px;letter-spacing:-.03em;font-style:normal;}
   .section p {
     margin-bottom: 14px; line-height: 1.65; color: var(--ink-soft);
     font-size: 15.5px;
@@ -250,34 +240,33 @@
   }
   .recommend-card .rec-tag {
     display: inline-block;
-    background: var(--gold); color: var(--navy);
-    font-family: var(--font-body); font-size: 10.5px; font-weight: 700;
+    background: var(--gold);color:#ffffff;
+    font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif; font-size: 10.5px; font-weight: 700;
     letter-spacing: 0.18em; text-transform: uppercase;
     padding: 4px 12px; margin-bottom: 16px;
   }
   .recommend-card h3 {
-    font-family: var(--font-display); font-weight: 600;
+    font-family: 'Bricolage Grotesque','Arial Narrow',system-ui,sans-serif;font-weight:800;
     font-size: 36px; color: var(--navy); margin-bottom: 8px;
-    line-height: 1.1;
-  }
+    line-height: 1.1;letter-spacing:-.03em;font-style:normal;}
   .recommend-card .rec-tagline {
-    font-family: var(--font-display); font-style: italic;
+    font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;font-style:normal;
     font-size: 17px; color: var(--ink-soft); margin-bottom: 24px;
-    padding-bottom: 18px; border-bottom: 1px solid rgba(200, 151, 42, 0.4);
+    padding-bottom: 18px; border-bottom: 1px solid rgba(39,71,245,0.4);
   }
   .rec-component {
     margin-bottom: 22px;
     padding-bottom: 22px;
-    border-bottom: 1px dashed rgba(200, 151, 42, 0.4);
+    border-bottom: 1px dashed rgba(39,71,245,0.4);
   }
   .rec-component:last-child { border-bottom: none; padding-bottom: 0; margin-bottom: 0; }
   .rec-component-label {
-    font-family: var(--font-body); font-size: 10.5px; font-weight: 700;
+    font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif; font-size: 10.5px; font-weight: 700;
     letter-spacing: 0.18em; color: var(--red); text-transform: uppercase;
     margin-bottom: 8px;
   }
   .rec-component-value {
-    font-family: var(--font-display); font-size: 17px;
+    font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif; font-size: 17px;
     color: var(--navy); line-height: 1.5;
   }
   .rec-component-value strong { font-weight: 700; }
@@ -314,19 +303,18 @@
     gap: 8px;
   }
   .model-name {
-    font-family: var(--font-display); font-weight: 600;
-    font-size: 20px; color: var(--navy);
-  }
+    font-family: 'Bricolage Grotesque','Arial Narrow',system-ui,sans-serif;font-weight:800;
+    font-size: 20px; color: var(--navy);letter-spacing:-.03em;font-style:normal;}
   .model-status {
-    font-family: var(--font-body); font-size: 9.5px; font-weight: 700;
+    font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif; font-size: 9.5px; font-weight: 700;
     letter-spacing: 0.18em; text-transform: uppercase;
     padding: 3px 8px;
   }
-  .model-status.primary { background: var(--gold); color: var(--navy); }
+  .model-status.primary { background: var(--gold);color:#ffffff; }
   .model-status.viable { background: var(--teal); color: white; }
   .model-status.eliminated { background: var(--cream-dk); color: var(--ink-soft); }
   .model-reason {
-    font-family: var(--font-body); font-size: 13.5px;
+    font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif; font-size: 13.5px;
     color: var(--ink-soft); line-height: 1.55;
   }
   .model-reason strong { color: var(--navy); }
@@ -337,15 +325,14 @@
     padding: 36px 40px; margin: 20px 0;
   }
   .moves-card .moves-header {
-    font-family: var(--font-body); font-size: 11px; font-weight: 700;
-    letter-spacing: 0.22em; color: var(--gold); margin-bottom: 6px;
+    font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif; font-size: 11px; font-weight: 700;
+    letter-spacing: 0.22em;color:#93abff; margin-bottom: 6px;
   }
   .moves-card h3 {
-    font-family: var(--font-display); font-weight: 600;
-    font-size: 24px; color: white; margin-bottom: 8px;
-  }
+    font-family: 'Bricolage Grotesque','Arial Narrow',system-ui,sans-serif;font-weight:800;
+    font-size: 24px; color: white; margin-bottom: 8px;letter-spacing:-.03em;font-style:normal;}
   .moves-sub {
-    font-family: var(--font-display); font-style: italic;
+    font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;font-style:normal;
     font-size: 16px; color: var(--cream-dk); margin-bottom: 22px;
     padding-bottom: 18px; border-bottom: 1px solid rgba(255,255,255,0.15);
   }
@@ -356,23 +343,23 @@
   }
   .move:last-of-type { border-bottom: none; padding-bottom: 0; margin-bottom: 0; }
   .move-num {
-    font-family: var(--font-display); font-style: italic;
+    font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;font-style:normal;
     font-size: 14px; color: var(--gold); margin-bottom: 4px;
   }
   .move-text {
-    font-family: var(--font-display); font-weight: 600;
+    font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif; font-weight: 600;
     font-size: 18px; color: white; line-height: 1.4; margin-bottom: 8px;
   }
   .move-coach {
-    font-family: var(--font-body); font-size: 13px;
+    font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif; font-size: 13px;
     color: var(--cream-dk); line-height: 1.55;
   }
   .moves-rule {
-    background: rgba(192, 57, 43, 0.18);
+    background: rgba(179,38,30,0.18);
     border-left: 3px solid var(--red);
     padding: 14px 18px;
     margin-top: 28px;
-    font-family: var(--font-body); font-size: 13px;
+    font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif; font-size: 13px;
     color: rgba(255,255,255,0.92); line-height: 1.6;
   }
   .moves-rule strong { color: white; font-weight: 700; }
@@ -385,13 +372,12 @@
     margin-top: 56px; padding-top: 28px;
     border-top: 1px solid var(--rule);
     display: flex; justify-content: space-between; align-items: baseline;
-    font-family: var(--font-body); font-size: 11px;
-    letter-spacing: 0.18em; text-transform: uppercase;
-    color: var(--slate);
+    font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif; font-size: 11px;
+    letter-spacing: 0.18em; text-transform: uppercase;color:#59616e;
   }
   .signature .left { color: var(--gold); font-weight: 700; }
   .hint {
-    font-family: var(--font-display); font-style: italic;
+    font-family: 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;font-style:normal;
     font-size: 13px; color: var(--red); margin-top: 6px;
   }
 
@@ -411,19 +397,35 @@
     .moves-card h3, .move-text { color: var(--navy) !important; }
     .moves-card .moves-sub, .move-coach { color: var(--ink-soft) !important; }
     .move-num, .moves-header { color: var(--gold-dk) !important; }
-    .moves-rule { color: var(--navy) !important; background: #fff5f3 !important; }
+    .moves-rule { color: var(--navy) !important; background: #fbfaf6 !important; }
     .moves-rule strong { color: var(--red) !important; }
     .section { margin-bottom: 28px; }
     .signature { page-break-inside: avoid; }
     #artifact-2, #artifact-3 { page-break-before: always; }
   }
+
+/* Two Weeks Out module band, October 2026 system */
+.two-band{display:flex;flex-wrap:wrap;gap:4px 18px;justify-content:space-between;align-items:center;padding:12px 24px;background:#9B9BFF;color:#10131a;border-bottom:2px solid #10131a;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.two-band .two-wm{font-family:'Bricolage Grotesque','Arial Narrow',system-ui,sans-serif;font-weight:800;font-size:17px;letter-spacing:-.03em;line-height:1;color:#10131a}
+.two-band .two-mod{font-family:'JetBrains Mono',ui-monospace,Menlo,Consolas,monospace;font-weight:700;font-size:11px;letter-spacing:.1em;text-transform:uppercase;line-height:1.3;color:#10131a}
+body{-webkit-font-smoothing:antialiased}
+@media print{.two-band{display:none !important}}
+/* shared touches, October 2026 system */
+button,select,optgroup,option{font-family:inherit}
+input[type=checkbox],input[type=radio],input[type=range]{accent-color:#2747f5}
+h1 em,h1 i{font-style:normal !important;font-weight:inherit !important;color:inherit !important;background:linear-gradient(#ff5a1f,#ff5a1f) left calc(100% - .04em)/100% .09em no-repeat;padding-bottom:.02em;-webkit-box-decoration-break:clone;box-decoration-break:clone;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+/* contrast on dark and tinted blocks */
+div.warning-callout div.warning-label{color:#93abff}
+div.moves-card p.moves-sub{color:#fbfaf6}
+div.moves-card div.move-num{color:#93abff}
 </style>
 </head>
 <body>
+<div class="two-band"><span class="two-wm">Two Weeks Out</span><span class="two-mod">04 / Price for Profit</span></div>
 <div class="frame">
 
 <header class="masthead" id="masthead">
-  <div class="brand-stripe">FOUNDERSPATH  ·  PRICING MODEL WORKSHEET</div>
+  <div class="brand-stripe">Two Weeks Out  ·  PRICING MODEL WORKSHEET</div>
   <h1 class="title">Find the Right<br><em>Pricing Model</em></h1>
   <p class="deck">Three honest answers about your customer's behavior and your current capacity. The worksheet matches them against the four models and recommends the one that actually fits — before you spend weeks on the wrong number inside the wrong structure.</p>
 </header>
@@ -452,12 +454,12 @@
   <div class="warning-callout">
     <div class="warning-label">THE PRINCIPLE THAT GOVERNS THIS WORKSHEET</div>
     <div class="warning-headline">Structure first. Number after.</div>
-    <div class="warning-body">Most founders do this backwards: weeks on what to charge, zero time on how to charge. The price is built on top of the model. Get the model wrong and no number fixes the structural problem underneath. This worksheet is calibrated to keep you working on the model first.</div>
+    <div class="warning-body">Most owners do this backwards: weeks on what to charge, zero time on how to charge. The price is built on top of the model. Get the model wrong and no number fixes the structural problem underneath. This worksheet is calibrated to keep you working on the model first.</div>
   </div>
 
   <div class="field">
     <label class="field-label" for="biz-name">Business or product name</label>
-    <input type="text" id="biz-name" placeholder="What you'd call it talking to a friend">
+    <input type="text" id="biz-name" placeholder="What you&#39;d call it talking to a friend">
   </div>
 
   <div class="field">
@@ -474,7 +476,7 @@
       <option value="">— Pick one —</option>
       <option value="transactional">Transactional — one-time purchases, sell on a website</option>
       <option value="subscription">Subscription — recurring revenue from ongoing customers</option>
-      <option value="wholesale">Wholesale — sell to intermediaries who reach the customer</option>
+      <option value="wholesale">Referral channel — a trusted practice or partner refers; the customer buys and pays directly</option>
       <option value="hybrid">Hybrid — multiple models running in parallel</option>
       <option value="unsure">I'm not sure yet — this worksheet is the deciding factor</option>
     </select>
@@ -550,7 +552,7 @@
     <button class="btn btn-secondary" onclick="goTo(1)">←  Back</button>
     <button class="btn btn-primary" onclick="goTo(3)">Continue  →</button>
   </div>
-  <p class="hint" id="q-hint" hidden style="text-align:right;">Please answer both questions before continuing.</p>
+  <p class="hint" id="q-hint" hidden="" style="text-align:right;">Please answer both questions before continuing.</p>
 </section>
 
 <!-- ============ PANEL 3 ============ -->
@@ -578,7 +580,7 @@
 
       <label class="check-card">
         <input type="checkbox" name="cap" value="receivables">
-        <span><strong>Receivables management.</strong> The ability to invoice, follow up, and carry 30–60 day payment terms without the cash gap killing the business. Finance discipline, not a hobby.</span>
+        <span><strong>Referral-channel support.</strong> The systems to support referring practices or partners — keeping them equipped to recommend, and keeping product moving where the customer buys it at the point of sale. Active relationship work, not a one-time setup.</span>
       </label>
 
       <label class="check-card">
@@ -597,7 +599,7 @@
     <button class="btn btn-secondary" onclick="goTo(2)">←  Back</button>
     <button class="btn btn-primary" id="generate-btn" onclick="generateOutput()">Generate My Pricing Model  →</button>
   </div>
-  <p class="hint" id="generate-hint" hidden style="text-align:right;">Please complete the previous steps before generating.</p>
+  <p class="hint" id="generate-hint" hidden="" style="text-align:right;">Please complete the previous steps before generating.</p>
 </section>
 
 <!-- ============ OUTPUT ============ -->
@@ -685,8 +687,8 @@
     const models = {
       transactional: { name: 'Transactional', tag: 'TRANSACTIONAL' },
       subscription: { name: 'Subscription', tag: 'SUBSCRIPTION' },
-      wholesale: { name: 'Wholesale', tag: 'WHOLESALE' },
-      hybrid: { name: 'Hybrid', tag: 'HYBRID (subscription + wholesale)' }
+      wholesale: { name: 'Referral Channel', tag: 'REFERRAL CHANNEL' },
+      hybrid: { name: 'Hybrid', tag: 'HYBRID (subscription + referral channel)' }
     };
 
     // start with all four models on the table
@@ -711,9 +713,9 @@
     // QUESTION 2: access
     if (d.access === 'direct') {
       status.wholesale.eliminated = true;
-      status.wholesale.reasons.push('You don\'t have an intermediary stack to leverage. Wholesale requires a trusted partner already standing between you and the customer.');
+      status.wholesale.reasons.push('You don\'t have an intermediary in the path. A referral channel requires a practice or partner already standing between you and the customer.');
       status.hybrid.eliminated = true;
-      status.hybrid.reasons.push('Hybrid requires the wholesale motion, which needs an intermediary you don\'t currently have.');
+      status.hybrid.reasons.push('Hybrid requires the referral-channel motion, which needs an intermediary you don\'t currently have.');
     } else if (d.access === 'intermediary') {
       status.transactional.reasons.push('Direct transactional remains viable, but you\'re ignoring a structural advantage — the trusted intermediary already has your customer\'s attention.');
       // subscription reachability is harder without direct access
@@ -737,11 +739,11 @@
     if (!caps.includes('receivables')) {
       if (!status.wholesale.eliminated) {
         status.wholesale.eliminated = true;
-        status.wholesale.reasons.push('Wholesale means 30–60 day payment terms. Without receivables management discipline, the cash gap will kill the business before the volume justifies it.');
+        status.wholesale.reasons.push('A referral channel needs systems to support referring practices and keep product moving at the point of sale. Without that capability in place, the channel stalls before it generates volume.');
       }
       if (!status.hybrid.eliminated) {
         status.hybrid.eliminated = true;
-        status.hybrid.reasons.push('Hybrid requires the wholesale motion, which requires receivables management you don\'t yet have.');
+        status.hybrid.reasons.push('Hybrid requires the referral-channel motion, which requires the practice-support capability you don\'t yet have.');
       }
     }
     if (!caps.includes('acquisition')) {
@@ -763,7 +765,7 @@
     // pick the primary recommendation
     // priority logic:
     // 1. If hybrid is viable AND access is "both" AND cadence is recurring → hybrid
-    // 2. If wholesale is viable AND access is intermediary → wholesale (lesson's principle: start where channels are strongest, lowest CAC)
+    // 2. If referral channel is viable AND access is intermediary → referral channel (lesson's principle: start where channels are strongest, lowest CAC)
     // 3. If subscription is viable AND cadence is recurring → subscription
     // 4. Otherwise → transactional if viable, else "no clear fit"
     let primary;
@@ -820,16 +822,16 @@
         next: 'In the next lesson on price-setting, you\'ll set the per-period price. Subscription pricing leans on lifetime value, not per-transaction margin \u2014 the math is different.'
       },
       wholesale: {
-        what: 'Sell to an intermediary \u2014 a clinic, a retailer, a professional service \u2014 who distributes to the end customer. You trade margin per unit for volume and dramatically lower customer acquisition cost.',
-        why: 'A trusted intermediary already stands between you and your customer, and you have receivables-management capacity to handle the 30\u201360 day payment terms that come with this model. The lesson is direct: this is the model most founders undervalue.',
-        risk: 'Lower margin per unit means volume must scale to compensate. And you\'re dependent on the intermediary\u2019s willingness to keep recommending or stocking. The relationship needs active maintenance.',
-        next: 'In the next lesson on price-setting, you\'ll set the wholesale price. Wholesale pricing requires margin discipline because the intermediary takes a meaningful cut \u2014 and your floor needs to allow for it.'
+        what: 'A trusted intermediary \u2014 a clinic, a practice, a professional \u2014 recommends your product, and the customer buys and pays at the point of sale. The intermediary refers; it does not resell or carry receivables. You borrow the trust they have already built, which dramatically lowers customer acquisition cost.',
+        why: 'A trusted intermediary already stands between you and your customer, and you have the capability to support those referring partners and keep product moving where the customer buys it. The lesson is direct: this is the model most owners undervalue.',
+        risk: 'You are dependent on the referral relationship, and you\'re dependent on the intermediary\u2019s willingness to keep recommending or stocking. The relationship needs active maintenance.',
+        next: 'In the next lesson on price-setting, you\'ll set the price for this channel. Margin per unit holds because the customer pays full price at the point of sale \u2014 the intermediary is not taking a cut.'
       },
       hybrid: {
-        what: 'Two pricing models running in parallel \u2014 typically subscription for direct customers and wholesale for intermediary partners. The same product, but two distinct customer journeys with two distinct price structures.',
+        what: 'Two pricing models running in parallel \u2014 typically subscription for direct customers and a referral channel for intermediary partners. The same product, but two distinct customer journeys with two distinct price structures.',
         why: 'You have two genuinely distinct customer pathways, both motions are individually viable, and you have the capacity to run them simultaneously without channel conflict. The lesson is direct: hybrid is achievable, but lots of infrastructure is needed.',
         risk: 'Two models means two of every operational concern \u2014 two pricing structures, two billing systems, two channel-maintenance demands. The risk isn\'t conceptual, it\'s execution capacity.',
-        next: 'In the next lesson on price-setting, you\'ll price both motions. Hybrid pricing requires that the two prices not conflict (e.g., the wholesale price plus the intermediary\'s margin shouldn\'t undercut your direct subscription price).'
+        next: 'In the next lesson on price-setting, you\'ll price both motions. Hybrid pricing requires that the two prices not conflict (e.g., the referral-channel price plus the intermediary\'s margin shouldn\'t undercut your direct subscription price).'
       }
     };
 
@@ -840,7 +842,7 @@
 
     return `
       <header class="output-masthead">
-        <div class="brand-stripe">FOUNDERSPATH  ·  PRICING MODEL DECISION</div>
+        <div class="brand-stripe">Two Weeks Out  ·  PRICING MODEL DECISION</div>
         <h1 class="output-title">Pricing Model<br>for <em>${escape(d.bizName)}</em></h1>
         <p class="output-sub">${escape(d.whatSold)}</p>
         <div class="output-meta">
@@ -884,7 +886,7 @@
             </div>
           </div>
         ` : `
-          <div class="recommend-card" style="background: #FFF5F3; border-color: var(--red);">
+          <div class="recommend-card" style="background: #fbfaf6; border-color: var(--red);">
             <div class="rec-tag" style="background: var(--red); color: white;">NO CLEAR PRIMARY MODEL</div>
             <h3>None of the four models cleanly fits your current setup.</h3>
             <p class="rec-tagline">All four standard pricing models have been eliminated by your answers \u2014 see the comparison below.</p>
@@ -946,8 +948,8 @@
             <div class="move-coach">${
               rec.primary === 'transactional' ? 'Confirm your acquisition channel: where does the next ten customers come from? If you don\'t have a concrete answer, the model is theoretical.' :
               rec.primary === 'subscription' ? 'Confirm your enrollment trigger: at exactly what moment in the customer\'s journey do they sign up for the recurring relationship? If the answer is \u201Csomewhere on our website,\u201D the trigger isn\'t real yet.' :
-              rec.primary === 'wholesale' ? 'Confirm your first intermediary partner candidate by name. Not \u201Cpractices in our region\u201D \u2014 the actual practice, the actual buyer, and what would make them say yes to stocking your product.' :
-              rec.primary === 'hybrid' ? 'Confirm that the two motions don\'t conflict on price. The wholesale price plus the intermediary\'s margin shouldn\'t undercut your direct price \u2014 or you\'ll cannibalize one channel with the other.' :
+              rec.primary === 'wholesale' ? 'Confirm your first intermediary partner candidate by name. Not \u201Cpractices in our region\u201D \u2014 the actual practice, the actual buyer, and what would make them say yes to referring your product.' :
+              rec.primary === 'hybrid' ? 'Confirm that the two motions don\'t conflict on price. The referral-channel price plus the intermediary\'s economics shouldn\'t undercut your direct price \u2014 or you\'ll cannibalize one channel with the other.' :
               'Look at the eliminated models. Pick the one closest to viable and identify the single capability whose absence is driving the elimination. Closing one capability often unlocks a model.'
             }</div>
           </div>
@@ -970,7 +972,7 @@
       </div>
 
       <div class="signature">
-        <div class="left">FOUNDERSPATH</div>
+        <div class="left">Two Weeks Out</div>
         <div>Pricing Model Worksheet  ·  Choosing a Pricing Model That Fits Your First Offers  ·  Generated ${today}</div>
       </div>
     `;
@@ -1008,5 +1010,6 @@
   });
 </script>
 
-</body>
-</html>
+
+
+</body></html>
